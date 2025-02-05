@@ -9,5 +9,5 @@ class ContactAPIView(APIView):
         serializer = ContactSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()  # This will trigger the signal
-            return Response({'message': 'Contact form submitted successfully'}, status=status.HTTP_201_CREATED)
+            return Response({'message': 'Message sent successfully!'}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
