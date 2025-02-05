@@ -2,3 +2,4 @@ django-email
 djangorestframework
 python-dotenv
 Django
+django-cors-headers
